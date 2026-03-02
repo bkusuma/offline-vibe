@@ -1,0 +1,59 @@
+# Site configuration
+# ========================================================
+
+# Basic site settings
+locale: en-US
+timezone: America/New_York
+title: Mistral Vibe Documentation
+description: Comprehensive documentation and performance optimization guide for Mistral Vibe on MacBook Pro
+description: Comprehensive documentation and performance optimization guide for Mistral Vibe on MacBook Pro
+url: https://bkusuma.github.io
+github_username: bkusuma
+
+# Build settings
+source: .
+destination: _site
+plugins_dir: _plugins
+layouts_dir: _layouts
+includes_dir: _includes
+collections:
+  posts:
+    output: true
+    permalink: /posts/:year-:month-:day-:title/
+
+# Markdown processing
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - .sass-cache/
+  - .jekyll-metadata
+
+# Theme settings
+theme: minima
+author:
+  name: 'Benny Kusuma'
+  email: benny.kusuma@example.com
+  uri: https://github.com/bkusuma
+  twitter: benny_kusuma
+
+# Navigation
+navigation:
+  - { title: Home, url: / }
+  - { title: About Mistral Vibe, url: /about/ }
+  - { title: Performance Guide, url: /performance/ }
+  - { title: Documentation, url: /docs/ }
+
+# Google Analytics (optional)
+google_analytics: UA-XXXXXX-X
