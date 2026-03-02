@@ -1,3 +1,337 @@
+# ============================================================================
+# CONSOLIDATED .gitignore
+# Covers: Windows + macOS, Gemini + Copilot + Claude Code
+# Last updated: 3 March 2026
+# ============================================================================
+
+# ========== WINDOWS OS ==========
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+desktop.ini
+.desktop
+~$*
+*.lnk
+*.exe
+*.bat
+*.cmd
+
+# ========== MACOS ==========
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+.build/
+*.pbxuser
+*.xcworkspace/xcuserdata/
+
+# ========== AI ASSISTANTS ==========
+# Gemini
+.gemini/
+.gemini_cache/
+gemini_logs/
+.gemini_history
+*.gemini_tmp
+.gemini_suggestions
+
+# GitHub Copilot (Codex)
+.copilot/
+.copilot_cache/
+copilot_logs/
+.copilot_history
+.copilot_suggestions
+.copilot_telemetry/
+
+# Claude Code
+.claude/
+.claude_code/
+claude_cache/
+.claude_code_cache/
+claude_logs/
+.claude_code_session
+.claude_artifacts/
+*.claude_tmp
+.claude_history
+claude_context.json
+
+# OpenAI Codex (API & Direct Usage)
+.openai/
+.openai_cache/
+openai_logs/
+.codex_history
+.codex_cache/
+codex_session.json
+
+# JetBrains AI Assistant
+.idea/ai-assistant/
+.idea/vcs.xml
+*.iml
+idea_ai_cache/
+
+# Tabnine
+.tabnine/
+tabnine_cache/
+.tabnine_cache/
+tabnine_logs/
+.tabnine_history
+
+# Amazon CodeWhisperer
+.codewhisperer/
+codewhisperer_cache/
+.codewhisperer_cache/
+codewhisperer_logs/
+.aws/codewhisperer/
+
+# Visual Studio IntelliCode
+.vs/IntelliCode/
+.vs/intellicode/
+.intellicode/
+intellicode_cache/
+
+# Codeium
+.codeium/
+codeium_cache/
+.codeium_cache/
+codeium_logs/
+.codeium_session
+
+# Cursor IDE
+.cursor/
+cursor_cache/
+.cursor_cache/
+cursor_logs/
+.cursor_history
+.cursor_artifacts/
+
+# Replit Ghostwriter
+.replit_cache/
+ghostwriter_cache/
+.ghostwriter_history
+replit_db.json
+
+# ========== IDE & EDITORS ==========
+.vscode/
+.idea/
+*.user
+*.suo
+*.VC.db
+.vs/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.iml
+*.iws
+*.ipr
+
+# ========== PACKAGE MANAGERS ==========
+# Node/npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.npmrc
+package-lock.json
+yarn.lock
+lerna-debug.log*
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Ruby
+.bundle/
+vendor/bundle/
+Gemfile.lock
+
+# Go
+vendor/
+*.out
+
+# Rust
+target/
+Cargo.lock
+
+# Java/Gradle/Maven
+.gradle/
+build/
+.m2/
+target/
+
+# ========== SECRETS & CREDENTIALS ==========
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+.env.*.example
+.aws/credentials
+.aws/config
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+private/
+
+# ========== TEMPORARY & CACHE ==========
+.cache/
+.tmp/
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+.sass-cache/
+*.log
+logs/
+*.logs
+.parcel-cache
+
+# ========== BUILD OUTPUT ==========
+dist/
+build/
+out/
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# ========== DATABASE & DATA ==========
+*.sqlite
+*.sqlite3
+*.db
+*.sqlite-shm
+*.sqlite-wal
+*.mdb
+*.accdb
+
+# ========== TESTING ==========
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mocha_cache/
+.nyc_output/
+junit.xml
+test-results/
+allure-results/
+
+# ========== RUNTIME & LOCKS ==========
+*.lock
+*.pid
+.pidfile
+run/
+.pm2/
+
+# ========== DOCKER & CONTAINER ==========
+docker-compose.override.yml
+.docker/
+.dockerignore
+
+# ========== DEPLOYMENT & INFRASTRUCTURE ==========
+terraform.tfstate*
+terraform.tfvars
+.terraform/
+.terraform.lock.hcl
+ansible/vault
+*.key
+
+# ========== COMPILED & GENERATED CODE ==========
+*.min.js
+*.min.css
+.next/
+.nuxt/
+dist/
+out/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.cache-loader
+
+# ========== OS TEMP FILES ==========
+.AppleDouble
+.LSOverride
+Icon
+._*
+.apdisk
+.Spotlight-V100
+.Trashes
+Zone.identifier
+Thumbs.db:encryptable
+
+# ========== IDE EXTENSIONS & WORKSPACE ==========
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+!.vscode/extensions.json
+.vscode/*.code-snippets
+
+# ========== MISC ==========
+.DS_Store
+.AppleDouble
+.LSOverride
+*.bak
+*.tmp
+.merlin
+
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
