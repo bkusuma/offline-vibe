@@ -6,8 +6,8 @@ locale: en-US
 timezone: America/New_York
 title: Mistral Vibe Documentation
 description: Comprehensive documentation and performance optimization guide for Mistral Vibe on MacBook Pro
-description: Comprehensive documentation and performance optimization guide for Mistral Vibe on MacBook Pro
 url: https://bkusuma.github.io
+baseurl: /offline-vibe
 github_username: bkusuma
 
 # Build settings
@@ -41,7 +41,9 @@ exclude:
   - .jekyll-metadata
 
 # Theme settings
-theme: minima
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
 author:
   name: 'Benny Kusuma'
   email: benny.kusuma@example.com
